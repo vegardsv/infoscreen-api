@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'public')))
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8081
 
 const router = express.Router()
 
