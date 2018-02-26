@@ -49,7 +49,7 @@ router.get('/images', (req, res) => {
   return res.json(
     images.map(image => ({
       id: image.id,
-      url: utils.getPublicURI(req) + '/background/' + image.url
+      url: utils.getPublicURI(req) + image.url
     }))
   )
 })
